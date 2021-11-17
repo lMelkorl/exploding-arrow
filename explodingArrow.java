@@ -12,12 +12,12 @@ public class explodingArrow extends JavaPlugin implements Listener{
 	protected explodingArrowLog log;
 	protected ArrayList<String> enabledPlayers;
 	
-	//temel onEnable komutları
+	//basic onEnable commands
 	public void onEnable() {
 		this.log = new explodingArrowLog(this); 
 		this.enabledPlayers = new ArrayList<String>();
 		
-		//eğer komut yazılırsa patlayıcı executor calıısın
+		//run explosive executor if command is typed
 		this.getCommand("patla").setExecutor((CommandExecutor) new explodingArrowExecutor(this));
 		
 		PluginManager manger = this.getServer().getPluginManager();

@@ -11,7 +11,7 @@ public class explodingArrowExecutor implements CommandExecutor {
 	
 	private explodingArrow plugin;
 	
-	//constructor
+	//constructor??
 	public explodingArrowExecutor(explodingArrow plugin) {
 		this.plugin = plugin;
 	}
