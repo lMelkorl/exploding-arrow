@@ -20,7 +20,7 @@ public class explodingArrowExecutor implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if(sender instanceof Player == false) {
 			
-			sender.sendMessage(ChatColor.RED + "Bu komut yanlızca oyuncular içindir kullanılır.");
+			sender.sendMessage(ChatColor.RED + "This command is for players only.");
 			
 			return true;
 		}
@@ -30,11 +30,11 @@ public class explodingArrowExecutor implements CommandExecutor {
 		
 		if(plugin.enabledPlayers.contains(playerName)) {
 			plugin.enabledPlayers.remove(playerName);
-			player.sendMessage(ChatColor.RED + "Patlayıcı oklar kapalı !");
+			player.sendMessage(ChatColor.RED + "Explosive arrows off!");
 			
 		}else {
 			plugin.enabledPlayers.add(playerName);
-			player.sendMessage(ChatColor.GREEN + "Patlayıcı oklar açık !");
+			player.sendMessage(ChatColor.GREEN + "Explosive arrows are on!");
 		}
 		
 		return true;

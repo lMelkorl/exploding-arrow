@@ -1,0 +1,8 @@
+name: thisPlugin
+author: lMelkorl
+version: 1.0
+main: thisPlugin.Melkor.explodingArrow.explodingArrow
+commands:
+    explode:
+      description: Unlock exploding arrows
+      usege: /<commands>

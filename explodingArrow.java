@@ -18,7 +18,7 @@ public class explodingArrow extends JavaPlugin implements Listener{
 		this.enabledPlayers = new ArrayList<String>();
 		
 		//run explosive executor if command is typed
-		this.getCommand("patla").setExecutor((CommandExecutor) new explodingArrowExecutor(this));
+		this.getCommand("explode").setExecutor((CommandExecutor) new explodingArrowExecutor(this));
 		
 		PluginManager manger = this.getServer().getPluginManager();
 		
