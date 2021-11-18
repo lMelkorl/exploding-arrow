@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 import org.bukkit.plugin.PluginDescriptionFile;
 
 public class explodingArrowLog{
-	
+
 	private explodingArrow plugin;
 	private Logger log;
 	
